@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title> BigSexy - Create and save your spotify playlists!</title>
+  </head>
+  <body>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><i class="fa fa-search"></i>
+      BigSexy</a>
+    </div>
+
+    <!--collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+     <form class="navbar-form navbar-left" role="search" action="submit">
+      <div class="form-group">
+        <input id="queryBox" type="text" class="form-control" placeholder="Search Spotify" autofocus="true">
+      </div>
+      <a id="submitSearch" href="#" class="btn btn-default">Submit</a>
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a id="userProfile" href=""><img style="display: none;" id="userPic" src=""/></li></a>
+      <li><a id="login" herf="#" data-toggle="modal" data-target="#favModal">Login with Spotify</a></li>
+      <li><a id="favs" href="#" data-toggle="modal" data-target="#favModal"> View Favorites</a></li>
+      </ul>
+    </div><!--/.navbar-collapse -->
+  </div><!--/.container-fluid-->
+</nav>
+<div class="jumbotron">
+   <h1 class="text-center">BigSexy</h1>
+   <p class="text-center">Your own personal playlist playground</p>
+</div>
+<div class="intro col-md-12">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 text-center">
+       <i class="fa fa-search-plus fa-3x"></i>
+       <h3>Start searching for your favorite artist and albums!</h3>
+      </div>
+      <div class="col-ms-4 text-center">
+       <i class="fa fa-sort-alpha-asc fa-3x"></i>
+       <h3>View the search resluts right here!</h3>
+      </div>
+      <div class="col-md-4 text-center">
+       <i class="fa fa-plus fa-3x"></i>
+       <h3>Starting adding tracks and favs to your new playlist!</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal-->
+<div class="modal fade" id="favModal" tabindex="1" role="dialog" aria-labelledby="MyModalLabel">
+ <div class="modal-dialog" role="document">
+  <div class="modal-content">
+   <div class="modal-header">
+     <h4 class="modal-title" id="favModalLabel"><span id="username"></span>Favorite Artist and Albums</h4>
+    </div>
+  <div class="modal-body">
+  </div>
+  <div class="modal-footer">
+     <a href="#" type="button" id="closeModal" data-dismiss="modal">Close</a>
+     </div>
+   </div>
+  </div>
+ </div>
+
+ <div class="main col-md-12">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-3">
+        <h4 id="resultHeader" class="pull-left"></h4>
+      </div>
+      <div class="col-md-12 resultIcon">
+        <a class="albumLink" href=""><img class="artistImage center-block"/></a>
+      </div>
+      </div>
+
+      <div id="results"></div>
+    </div>
+  </div>
+
+
+  </body>
+
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
