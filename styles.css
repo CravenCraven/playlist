@@ -5,7 +5,7 @@ body {
 }
 
 nav.navbar {
-  background:#141414;
+  background: #141414;
   border: none;
   padding: 20px;
 }
@@ -167,7 +167,7 @@ div.panel-heading, div.panel-body, div.panel-footer, div.panel {
   background: #141414 ! important;
 }
 
-a:hover, div.panel-heading > a:hover {
+a:hover, div.panel-heading > a > hover {
   text-decoration: none ! important;
   color: #fff ! important;
 }
